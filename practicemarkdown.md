@@ -5,28 +5,10 @@
 *CSS Flexbox is a layout mode in CSS3, which is used for designing and aligning between items in a container to control their arrangement. It arranges items in one-dimension. Either in row or in column. It is used for small scale layout like for header and footer.*
 
 **Before applying CSS Flexbox** 
-<style>
-.nav-css{
-    display: flex;
-    background: skyblue;
-    /* height: 50px; */
-    align-items: center;
-    gap: 20px;
-}
-.nav{
-    background: skyblue;
-    /* height: 50px; */
-    align-items: center;
-}
 
-</style>
-<div class="nav">
-    <div>HOME</div>
-    <div>ABOUT</div>
-    <div>CONTACT</div>
-    <div>SIGN UP</div>
-    <div>SIGN IN</div>
-</div>
+
+![Screenshot from 2021-08-22 00-39-38](https://user-images.githubusercontent.com/71551910/130367474-62de2ec2-42fb-4afc-814d-40ed66a24845.png)
+
 
 ```css
 
@@ -58,13 +40,15 @@
 
 **After applying CSS FLexbox**
 
-<div class="nav-css">
-    <div>HOME</div>
+<!-- <div class="nav-css"> -->
+<!--     <div>HOME</div>
     <div>ABOUT</div>
     <div>CONTACT</div>
     <div>SIGN UP</div>
     <div>SIGN IN</div>
-</div>
+</div> -->
+
+![Screenshot from 2021-08-22 00-39-42](https://user-images.githubusercontent.com/71551910/130367591-6a499f62-4a23-4b4d-94a5-73995d0f7797.png)
 
 *By default, just by adding (display: Flex) its layout is changed to column.*
 
@@ -97,18 +81,9 @@
 
 **After applying CSS Grid**
 
-<style>
-    .container {
-    display: grid;
-    grid-template-columns: 50px 50px 50px; */
-    grid-gap: 10rem;
-    grid-template-rows: 50px 50px;
-}
-.item {
-    background-color: orange;
-    border: 6px solid grey;
-}
-</style>
+![Screenshot from 2021-08-22 00-40-22](https://user-images.githubusercontent.com/71551910/130367625-ce30aae2-ba64-40eb-b0b5-2fc3403af8d8.png)
+
+
 <div class="container">
     <div class="item item1"></div>
     <div class="item item2"></div>
