@@ -61,7 +61,7 @@
   display: flex; /* or inline-flex */
 }
 ```
-#### Flexitems
+#### Flex items
 *Flex items are a property for children. Flex items are laid out in the source order. However, the order property controls the order in which they appear in the flex container.*
 ```css
 .item {
@@ -134,7 +134,7 @@
 ---
 
 ### CSS Grid
----
+
 *CSS Grid is a collection of styles that allow us to control website pages layout based on rows and columns. It arranges items in two-dimension. It is mainly used for complex design, where user needed to design each item with different style. Example of these is [github](https://github.com/).*
 
 ```css
