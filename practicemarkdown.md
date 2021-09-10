@@ -51,6 +51,87 @@
 ![Screenshot from 2021-08-22 00-39-42](https://user-images.githubusercontent.com/71551910/130367591-6a499f62-4a23-4b4d-94a5-73995d0f7797.png)
 
 *By default, just by adding (display: Flex) its layout is changed to column.*
+### Flexbox Properties
+---
+#### Flex Container
+
+*Flex container is a block depending on the given value. It enables a flex context for all its direct children. It is a property for parent.*
+``` css
+.container {
+  display: flex; /* or inline-flex */
+}
+```
+#### Flexitems
+*Flex items are a property for children. Flex items are laid out in the source order. However, the order property controls the order in which they appear in the flex container.*
+```css
+.item {
+  order: 50; 
+}
+```
+#### Flex-direction
+*Flex-direction establishes the main-axis, thus defining the direction flex items are placed in the flex container. Flex items as primarily laying out either in horizontal rows or vertical columns.*
+``` css
+.container {
+  flex-direction: row;
+}
+```
+### Flex-grow
+*Flex-grow is the ability for a flex item to grow if necessary. It accepts a unitless value that serves as a proportion. It dictates what amount of the available space inside the flex container the item should take up.*
+```css
+.item {
+  flex-grow: 4; /* default 0 */
+}
+```
+#### Flex-Wrap
+  *Flex items will all try to fit onto one line. we can change that and allow the items to wrap as needed with this property.*
+  ```css
+  .container {
+  flex-wrap: wrap;
+}
+```
+*wrap: flex items will wrap onto multiple lines, from top to bottom.*
+#### Flex-Shrink
+*Flex Shrink is the ability for a flex item to shrink if necessary.*
+```css
+.item{
+    flex-shrink:20;
+}
+```
+#### Flex-flow
+*Flex flow is a shorthand for the flex-direction and flex-wrap properties, which together define the flex container’s main and cross axes. The default value is row nowrap.*
+```css
+.container {
+    flex-flow: column wrap;
+}
+
+```
+#### Flex
+*Flex is the shorthand for flex-grow, flex-shrink and flex-basis combined. The default is 0 1 auto, but if you set it with a single number value, it’s like 1 0.*
+```css
+.item {
+  flex: 1
+}
+```
+*Flex will automatically set the flex-grow, flex-shrink and flex-basis.*
+#### Align-self
+
+*Align-self allows the default alignment to be overridden for individual flex Items.*
+```css
+.item {
+  align-self: center;
+}
+```
+*It will align flex Items to center.*
+#### Align-Content
+*align-content aligns a flex container’s lines within when there is extra space in the cross-axis,*
+```css
+.container {
+  align-content: stretch;
+}
+```
+*It will stretch lines to take up the remaining space.*
+
+---
 
 ### CSS Grid
 ---
@@ -95,8 +176,67 @@
 
 *By applying CSS grid we can make changes to multi-column as well as multi-row at same time.*
 
+### Grid Properties
+#### Display
+*Display defines the element as a grid container and establishes a new grid formatting context for its contents.*
+```css
+.container {
+  display: grid;
+}
+```
+*grid – generates a block-level grid.*
+#### Grid-column
+*Grid-column shorthand for grid-column-start + grid-column-end,*
+```css
+.item {
+  grid-row: <start-line> / <end-line>;
+}
+```
+#### grid-row
+*grid-row is a shorthand for grid-row-start + grid-row-end.*
+```css
+
+.item {
+  grid-row: <start-line> / <end-line>;
+}
+```
+#### Grid-area
+*Grid-area gives an item a name so that it can be referenced by a template created with the grid-template-areas property. Also, this property can be used as an even shorter shorthand for grid-row-start + grid-column-start + grid-row-end + grid-column-end.*
+```css
+.item-d {
+  grid-area: header;
+}
+```
+#### Justify-self
+*Justify-self aligns a grid item inside a cell along the inline (row) axis. This value applies to a grid item inside a single cell.*
+```css
+.item {
+  justify-self: start ;
+}
+```
+*It will aligns the grid item to be flush with the start edge of the cell.*
+
+#### align-self
+*Align-self aligns a grid item inside a cell along the block (column) axis (as opposed to justify-self which aligns along the inline (row) axis). This value applies to the content inside a single grid item.*
+```css
+.item-a {
+  align-self: start;
+}
+```
+*It will aligns the grid item to be flush with the start edge of the cell.*
+#### Justify-content
+*Justify-content property aligns the grid along the inline (row) axis.*
+```css
+.container {
+  justify-content: end;    
+}
+```
+*It will aligns the grid to be flush with the end edge of the grid container.*
+
+
 **Reference**
 
 *Website link:*
-[Section](https://www.section.io/engineering-education/css-flexbox-vs-css-grid/)
+[Section](https://www.section.io/engineering-education/css-flexbox-vs-css-grid/),
+[CSS-TRICKS](https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-properties)
 
