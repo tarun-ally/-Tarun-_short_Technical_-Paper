@@ -186,7 +186,7 @@
 ```
 *grid – generates a block-level grid.*
 #### Grid-column
-*Grid-column shorthand for grid-column-start + grid-column-end,*
+*Grid-column shorthand for grid-column-start + grid-column-end.*
 ```css
 .item {
   grid-row: <start-line> / <end-line>;
