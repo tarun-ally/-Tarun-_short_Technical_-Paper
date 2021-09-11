@@ -192,8 +192,8 @@
   grid-row: <start-line> / <end-line>;
 }
 ```
-#### grid-row
-*grid-row is a shorthand for grid-row-start + grid-row-end.*
+#### Grid-row
+*Grid-row is a shorthand for grid-row-start + grid-row-end.*
 ```css
 
 .item {
@@ -201,7 +201,7 @@
 }
 ```
 #### Grid-area
-*Grid-area gives an item a name so that it can be referenced by a template created with the grid-template-areas property. Also, this property can be used as an even shorter shorthand for grid-row-start + grid-column-start + grid-row-end + grid-column-end.*
+*Grid-area gives an item a name, so that it can be referenced by a template created with the grid-template-areas property. Also, this property can be used as an even shorter shorthand for grid-row-start + grid-column-start + grid-row-end + grid-column-end.*
 ```css
 .item-d {
   grid-area: header;
