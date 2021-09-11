@@ -58,7 +58,7 @@
 *Flex container is a block depending on the given value. It enables a flex context for all its direct children. It is a property for parent.*
 ``` css
 .container {
-  display: flex; /* or inline-flex */
+  display: flex; 
 }
 ```
 #### Flex items
@@ -189,7 +189,7 @@
 *Grid-column shorthand for grid-column-start + grid-column-end.*
 ```css
 .item {
-  grid-row: <start-line> / <end-line>;
+  grid-column: 3/ span 2;
 }
 ```
 #### Grid-row
@@ -197,7 +197,7 @@
 ```css
 
 .item {
-  grid-row: <start-line> / <end-line>;
+  grid-row: third-line / 4 ;
 }
 ```
 #### Grid-area
