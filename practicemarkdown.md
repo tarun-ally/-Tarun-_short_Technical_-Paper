@@ -216,7 +216,7 @@
 ```
 *It will aligns the grid item to be flush with the start edge of the cell.*
 
-#### align-self
+#### Align-self
 *Align-self aligns a grid item inside a cell along the block (column) axis (as opposed to justify-self which aligns along the inline (row) axis). This value applies to the content inside a single grid item.*
 ```css
 .item-a {
